@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — KORVA</title>
+  <meta name="description" content="KORVA is a research and product studio for applied AI. Six years, one principle: build intelligence that earns its place." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container inner">
+      <a href="index.html" class="brand">
+        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="#FF6B4A" stroke-width="1.6"/><circle cx="16" cy="16" r="4.5" fill="#FF6B4A"/><circle cx="16" cy="3.5" r="2" fill="#6FA8FF"/><circle cx="27" cy="22" r="2" fill="#6FA8FF"/><circle cx="5" cy="22" r="2" fill="#6FA8FF"/></svg>
+        KORVA
+      </a>
+      <nav class="navlinks" id="menu">
+        <a href="index.html" class="navlink">Home</a>
+        <a href="about.html" class="navlink active">About</a>
+        <a href="service.html" class="navlink">Capabilities</a>
+        <a href="project.html" class="navlink">Work</a>
+        <a href="contact.html" class="navlink">Contact</a>
+      </nav>
+      <div class="nav-cta">
+        <a href="contact.html" class="btn sm">Start a project</a>
+        <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>About</span></div>
+      <span class="kicker reveal">The studio</span>
+      <h1 class="display reveal d1">We build intelligence that earns its place.</h1>
+      <p class="lead reveal d2">KORVA started in 2020 as a research group that got tired of demos that never shipped. Today we're a studio of engineers, researchers, and designers building applied AI for teams that measure.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container split">
+      <div class="prose reveal">
+        <h2>From papers to production</h2>
+        <p>We publish less than we ship. The work that matters to us is the model running quietly in your infrastructure at 3am, holding up under load, and improving every quarter because we built the eval loop to prove it.</p>
+        <p>That means we say no often. If a general-purpose model already solves your problem, we'll tell you to use it. We earn our keep on the messy, domain-specific, regulated edges where off-the-shelf falls apart.</p>
+        <p>We're small by design — senior people, few layers, direct lines to the people doing the work.</p>
+      </div>
+      <div class="reveal d1">
+        <div class="hero-panel">
+          <div class="scan"></div>
+          <div class="orb"><div class="ring r1"></div><div class="ring r2"></div><div class="ring r3"></div><div class="core"></div></div>
+          <div class="panel-row">
+            <div class="stat"><b>28</b><span>people</span></div>
+            <div class="stat"><b>3</b><span>offices</span></div>
+            <div class="stat"><b>2010s</b><span>founded</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container">
+      <div class="shead reveal"><span class="kicker">What we value</span><h2>Four things we won't compromise</h2></div>
+      <div class="grid cols-2">
+        <article class="card reveal"><div class="ic">🎯</div><h3>Outcome over output</h3><p>A model that ships and measurably helps beats a clever one that doesn't. We optimize for the metric, not the headline.</p></article>
+        <article class="card reveal d1"><div class="ic">🔍</div><h3>You own it</h3><p>Weights, code, eval sets — handed over. No black boxes, no lock-in, no mystery bills.</p></article>
+        <article class="card reveal d2"><div class="ic">🛡️</div><h3>Honest about limits</h3><p>We tell you when AI isn't the right tool. The fastest way to lose trust is to oversell it.</p></article>
+        <article class="card reveal d3"><div class="ic">📈</div><h3>Measure everything</h3><p>Every system ships with an evaluation suite. If we can't measure it, we don't claim it.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="shead reveal"><span class="kicker">The people</span><h2>Senior by default</h2><p>Small teams, direct access, no hand-offs to juniors you never meet.</p></div>
+      <div class="grid cols-3">
+        <article class="card reveal"><div class="ic">👤</div><h3>Priya Nandakumar</h3><p class="muted">Founder · Research. Former lab lead, sequence models.</p></article>
+        <article class="card reveal d1"><div class="ic">👤</div><h3>Tomas Vidal</h3><p class="muted">Head of Engineering. Ships models to regulated environments.</p></article>
+        <article class="card reveal d2"><div class="ic">👤</div><h3>Lena Hoffmann</h3><p class="muted">Design lead. Makes agent interfaces humans actually trust.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt">
+    <div class="container" style="max-width:760px">
+      <div class="shead reveal"><span class="kicker">Questions</span><h2>Things people ask</h2></div>
+      <details class="faq reveal" open><summary>Do we own the model we build?</summary><div class="ans">Yes. Unless we explicitly agree otherwise, the weights, training code, and evaluation sets are yours. We can host it, but the IP is your property from day one.</div></details>
+      <details class="faq reveal"><summary>Can you work in our cloud or on-prem?</summary><div class="ans">Most of our production work runs in the client's environment. We support AWS, GCP, Azure, and air-gapped on-prem deployments.</div></details>
+      <details class="faq reveal"><summary>How do you price a project?</summary><div class="ans">Fixed-scope for well-defined builds, monthly retainer for ongoing research. We'll give you a straight estimate after a short scoping call.</div></details>
+      <details class="faq reveal"><summary>What if AI isn't the right tool?</summary><div class="ans">We'll tell you. Roughly a third of inbound conversations end with us recommending a simpler, cheaper solution — and we're fine with that.</div></details>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container"><div class="cta reveal">
+      <h2>Want to build with us?</h2>
+      <p>Tell us the decision you're trying to automate. The first call is free and honest.</p>
+      <div class="actions"><a href="contact.html" class="btn">Start a project <span class="arrow">→</span></a><a href="project.html" class="btn ghost">See our work</a></div>
+    </div></div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="top">
+        <div><a href="index.html" class="brand"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="#FF6B4A" stroke-width="1.6"/><circle cx="16" cy="16" r="4.5" fill="#FF6B4A"/><circle cx="16" cy="3.5" r="2" fill="#6FA8FF"/><circle cx="27" cy="22" r="2" fill="#6FA8FF"/><circle cx="5" cy="22" r="2" fill="#6FA8FF"/></svg>KORVA</a><p>Applied AI research and products. We build intelligence that earns its place in your stack.</p></div>
+        <div><h4>Studio</h4><ul><li><a href="about.html">About</a></li><li><a href="project.html">Work</a></li><li><a href="service.html">Capabilities</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div><h4>Capabilities</h4><ul><li><a href="service.html">Foundation models</a></li><li><a href="service.html">Agent systems</a></li><li><a href="service.html">Integration</a></li></ul></div>
+        <div><h4>Stay close</h4><p>Occasional research notes. No noise.</p><form class="news" onsubmit="return false"><input type="email" placeholder="you@company.com" aria-label="Email" required /><button class="btn sm" type="submit">Join</button></form></div>
+      </div>
+      <div class="bottom"><span>© <span data-year>2026</span> KORVA Labs · All rights reserved.</span><span>Built with care, in the open.</span></div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
