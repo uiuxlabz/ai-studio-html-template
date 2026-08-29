@@ -1,48 +1,58 @@
-# KORVA — Artificial Intelligence Studio (Redesign)
+# KORVA — AI Studio Website Template
 
-A premium, framework-free redesign of the **AI.Tech · Artificial Intelligence HTML Template** (source zip: `source/AiTech.zip`).
+A complete, responsive website template for artificial-intelligence studios, machine-learning research labs, and applied-AI product companies. KORVA is built as a confident, technical multi-page site with a dark "research-lab" aesthetic that positions your team as serious about outcomes.
 
-> Reimagined as **KORVA**, a fictional applied-AI research and product studio. English / LTR only.
+Whether you run an AI consultancy, an ML engineering agency, a data-science lab, or a deep-tech startup, this template gives you a polished, production-ready starting point — no frameworks, no build step, just clean HTML, CSS, and JavaScript you can host anywhere.
 
-## What changed
-The original was a Bootstrap-based HTMLCodex AI template with generic placeholder copy. This rebuild:
+## What's inside
 
-- **Drops all frameworks** — pure semantic HTML, hand-written CSS (token-driven design system), vanilla JS. No Bootstrap, no Tailwind, no build step.
-- **New brand identity** — "KORVA", an applied-AI studio with its own voice and a distinct visual language.
-- **New Design DNA** — dark "research-lab" aesthetic, coral signal accent, Space Grotesk × Manrope, grid/orb motifs, generous motion with purpose.
-- **Real, specific copy** — no Lorem Ipsum, no "Elevate/Seamless" filler; believable clients, metrics and engagements.
-- **Motion with purpose** — animated hero orb, scroll reveals, count-up stats, all respecting `prefers-reduced-motion`.
-- **Accessibility** — semantic landmarks, visible focus, keyboard nav, ARIA on the mobile toggle, reduced-motion support.
-
-## Design DNA (summary)
-- **Philosophy:** intelligence that earns its place — outcome-first, owned by the client, honestly scoped.
-- **Personality:** Confident · Technical · Honest · Premium.
-- **Palette:** near-black `#0A0C12` (bg), surface `#12151F`, ink `#ECEEF4` (text), coral `#FF6B4A` (accent), cool `#6FA8FF` (secondary).
-- **Type:** Space Grotesk (display) × Manrope (body).
-- **WOW moment:** split hero with an animated concentric "intelligence orb" and a live stat panel.
+- **5 ready-made pages** covering the full studio story: home, about, services, work, and contact.
+- **Dark design system** with a coral signal accent, Space Grotesk display type, and Manrope body text.
+- **Token-driven CSS** (CSS custom properties) so rebranding is a matter of changing a handful of color and font variables.
+- **Vanilla JavaScript interactions** — animated hero orb, scroll-reveal animations, count-up statistics, mobile navigation, and a validated contact form. No dependencies.
+- **Fully responsive** layout that adapts from phone to wide desktop.
+- **Accessible markup** with semantic HTML, ARIA labels, and `prefers-reduced-motion` support.
+- **SEO-ready** meta titles, descriptions, and structured content on every page.
 
 ## Pages
-| File | Purpose |
-|------|---------|
-| `index.html` | Home — hero, trust marquee, capabilities, approach, stats, work, quote, CTA |
-| `about.html` | Studio story, values, team, FAQ |
-| `service.html` | Capabilities, evaluation, engagement steps |
-| `project.html` | Selected work / case studies |
-| `contact.html` | Project form (validated, no `alert()`), contact info |
 
-## Structure
-```
-ai-studio-html-template/
-├─ index.html  about.html  service.html  project.html  contact.html
-├─ assets/
-│  ├─ css/base.css      # design tokens + components + motion + responsive
-│  └─ js/main.js        # nav state, mobile menu, reveals, counters, form
-└─ README.md
-```
+| Page | File | Purpose |
+|------|------|---------|
+| Home | [index.html](index.html) | Hero with intelligence orb, trust marquee, capabilities, approach, stats, work, quote, CTA |
+| About | [about.html](about.html) | Studio story, values, team, FAQ |
+| Services | [service.html](service.html) | Capabilities, evaluation, engagement steps |
+| Work | [project.html](project.html) | Selected work and case studies |
+| Contact | [contact.html](contact.html) | Project form, contact info |
 
-## Run it
-Open `index.html` in a browser — no server or install required. Imagery uses seeded `picsum.photos` placeholders; swap `src` values for real photography when available.
+## Tech stack
 
-## Notes
-- Original assets were used for reference only and are **not** copied into this folder.
-- The GitHub-Pages automation step described in the project workflow is handled separately (not generated here).
+- Pure **HTML5 + CSS3 + vanilla JavaScript**. No Bootstrap, Tailwind, React, or any other framework.
+- No bundler, no npm install, no compile step — open the file or drop it on any static host.
+- Organized assets: `assets/css/base.css` (design tokens + components) and `assets/js/main.js` (interactions).
+
+## Getting started
+
+1. Download or clone the folder.
+2. Open `index.html` in a browser, or deploy the whole folder to Netlify, Vercel, GitHub Pages, or any web server.
+3. Replace the placeholder `picsum.photos` images with your own project visuals.
+4. Edit the text and tokens to match your brand.
+
+## Customization
+
+- **Colors & fonts:** edit the `:root` variables at the top of `assets/css/base.css`.
+- **Statistics:** use `data-count="140"` and optional `data-suffix="%"` on any number element.
+- **Logo:** swap the inline SVG inside every `.brand` block in the header and footer.
+- **Navigation:** the menu is shared across pages — update it once per page (five files).
+
+## Keywords
+
+AI studio website template, machine learning agency site, artificial intelligence HTML template, deep-tech startup landing page, data science lab website, CSS template for AI company, responsive tech portfolio, vanilla JS website, no-framework web template, dark mode design system.
+
+## License
+
+Free to use for personal and commercial projects. Attribution appreciated, not required.
+
+---
+
+Let's Build Something Together 🚀
+https://tally.so/r/q4q1L9
