@@ -54,14 +54,15 @@
   const runCount = (el) => {
     const target = parseFloat(el.dataset.count);
     const decimals = (el.dataset.count.split(".")[1] || "").length;
+    const suffix = el.dataset.suffix || "";
     const dur = 1600;
     const start = performance.now();
     const tick = (now) => {
       const p = Math.min((now - start) / dur, 1);
       const eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = (target * eased).toFixed(decimals);
+      el.textContent = (target * eased).toFixed(decimals) + suffix;
       if (p < 1) requestAnimationFrame(tick);
-      else el.textContent = target.toFixed(decimals);
+      else el.textContent = target.toFixed(decimals) + suffix;
     };
     requestAnimationFrame(tick);
   };
