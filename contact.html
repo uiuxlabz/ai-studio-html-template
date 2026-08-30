@@ -3,95 +3,141 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact — KORVA</title>
-  <meta name="description" content="Start a KORVA project, book a scoping call, or just ask whether AI is the right tool. Real researchers, quick replies." />
+  <title>Contact — KORVA AI Studio</title>
+  <meta name="description" content="Start an AI project with KORVA — book a free consultation, request a prototype, or discuss a production build." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/base.css" />
 </head>
 <body>
-  <header class="nav">
-    <div class="container inner">
-      <a href="index.html" class="brand">
-        <svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="#FF6B4A" stroke-width="1.6"/><circle cx="16" cy="16" r="4.5" fill="#FF6B4A"/><circle cx="16" cy="3.5" r="2" fill="#6FA8FF"/><circle cx="27" cy="22" r="2" fill="#6FA8FF"/><circle cx="5" cy="22" r="2" fill="#6FA8FF"/></svg>
-        KORVA
-      </a>
-      <nav class="navlinks" id="menu">
-        <a href="index.html" class="navlink">Home</a>
-        <a href="about.html" class="navlink">About</a>
-        <a href="service.html" class="navlink">Capabilities</a>
-        <a href="project.html" class="navlink">Work</a>
-        <a href="contact.html" class="navlink active">Contact</a>
+
+  <div class="statusbar">
+    <div class="container">
+      <span class="live"><span class="dot"></span>ALL SYSTEMS NOMINAL</span>
+      <span>Model training active — 3 pipelines running</span>
+      <span class="spacer"></span>
+      <a href="contact.html">Start a project →</a>
+    </div>
+  </div>
+
+  <header class="sitehead">
+    <div class="container">
+      <a href="index.html" class="mark"><span class="glyph">◆</span>KOR<span>V</span>A</a>
+      <nav id="mainnav">
+        <a href="index.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="project.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
       </nav>
-      <div class="nav-cta">
-        <a href="contact.html" class="btn sm">Start a project</a>
-        <button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
-      </div>
+      <a href="contact.html" class="cta">Start Project</a>
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
     </div>
   </header>
 
-  <section class="page-hero">
+  <section class="page-head">
     <div class="container">
-      <div class="breadcrumb"><a href="index.html">Home</a><span class="sep">/</span><span>Contact</span></div>
-      <span class="kicker reveal">Say hello</span>
-      <h1 class="display reveal d1">Start a project, or just ask</h1>
-      <p class="lead reveal d2">Tell us the decision you're trying to automate. The first call is free, and we'll be honest if AI isn't the answer.</p>
+      <span class="crumb"><a href="index.html">Home</a> / Contact</span>
+      <h1>Start your AI&nbsp;project</h1>
+      <p>Free consultation — we'll assess your data, your problem, and your success criteria.</p>
     </div>
   </section>
 
-  <section class="section">
-    <div class="container split" style="align-items:start">
-      <div class="contact-card reveal">
-        <h2 style="margin-bottom:1.4rem">Tell us about it</h2>
-        <form data-form novalidate>
-          <div class="form-row" style="margin-bottom:1.1rem">
-            <div class="field"><label for="n">Name</label><input id="n" name="name" required placeholder="Maya Rao" /></div>
-            <div class="field"><label for="e">Email</label><input id="e" name="email" type="email" required placeholder="you@company.com" /></div>
+  <section class="section section--surface">
+    <div class="container">
+      <div class="contact-grid">
+        <form id="contactform" class="reveal">
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" />
           </div>
-          <div class="form-row" style="margin-bottom:1.1rem">
-            <div class="field"><label for="c">Company</label><input id="c" name="company" placeholder="Meridian Bank" /></div>
-            <div class="field"><label for="t">What do you need?</label>
-              <select id="t" name="need"><option>Custom model</option><option>Agent system</option><option>Integration / deploy</option><option>Not sure yet</option></select>
+          <div class="form-row">
+            <div class="field">
+              <label for="email">Work Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@company.com" />
+            </div>
+            <div class="field">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Company name" />
             </div>
           </div>
-          <div class="field" style="margin-bottom:1.1rem"><label for="m">What outcome are you after?</label><textarea id="m" name="message" placeholder="e.g. auto-classify 2M invoices a day at 99% accuracy"></textarea></div>
-          <button class="btn block" type="submit">Send <span class="arrow">→</span></button>
-          <p class="form-ok note ok" hidden style="margin-top:.9rem">Thanks — we'll reply within one working day.</p>
-          <p class="form-err note err" hidden style="margin-top:.9rem"></p>
+          <div class="form-row">
+            <div class="field">
+              <label for="project-type">Project Type</label>
+              <select id="project-type" name="project-type">
+                <option value="prototype">Prototype (4 weeks)</option>
+                <option value="production">Production Build (8-12 weeks)</option>
+                <option value="retainer">Retainer / Ongoing</option>
+                <option value="consulting">Consulting / Advisory</option>
+                <option value="not-sure">Not sure yet</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="domain">Domain</label>
+              <select id="domain" name="domain">
+                <option value="vision">Computer Vision</option>
+                <option value="nlp">NLP / Language</option>
+                <option value="recommendation">Recommendation Systems</option>
+                <option value="anomaly">Anomaly Detection</option>
+                <option value="forecasting">Forecasting</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Describe Your Project</label>
+            <textarea id="message" name="message" rows="5" placeholder="What problem are you trying to solve? What does success look like? Any data or infrastructure context?"></textarea>
+          </div>
+          <div class="field">
+            <label for="budget">Estimated Budget Range</label>
+            <select id="budget" name="budget">
+              <option value="undecided">Prefer not to say</option>
+              <option value="25-50k">$25K – $50K</option>
+              <option value="50-100k">$50K – $100K</option>
+              <option value="100-250k">$100K – $250K</option>
+              <option value="250k+">$250K+</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary">Submit Brief →</button>
+          <div class="form-ok" hidden>Brief received — we'll schedule a consultation within 48 hours.</div>
+          <div class="form-err" hidden>Please fill in all required fields.</div>
         </form>
-      </div>
-
-      <div class="reveal d1">
-        <div class="info-item"><span class="ic">📍</span><div><b>Studio</b><span class="muted" style="display:block">Berlin · Lisbon · Toronto · remote-first</span></div></div>
-        <div class="info-item"><span class="ic">✉️</span><div><b>Email</b><a href="mailto:hello@korva.ai" class="tlink">hello@korva.ai</a><span class="muted" style="display:block">We reply within one working day</span></div></div>
-        <div class="info-item"><span class="ic">📞</span><div><b>Phone</b><a href="tel:+14155550199" class="tlink">+1 (415) 555-0199</a><span class="muted" style="display:block">Mon–Fri, 9am–6pm PT</span></div></div>
-        <div class="info-item"><span class="ic">🔒</span><div><b>Security</b><span class="muted" style="display:block">SOC 2 Type II · on-prem options · NDA on request</span></div></div>
-        <div class="contact-card" style="margin-top:1.5rem;background:var(--bg-alt)">
-          <h4 style="margin-bottom:.5rem">Scoping call?</h4>
-          <p class="muted" style="font-size:.92rem">Book a free 30-minute call. We'll map the outcome and the metric before anything else.</p>
+        <div>
+          <div class="info-card reveal d1">
+            <h4>Email</h4>
+            <a href="mailto:hello@korva.ai">hello@korva.ai</a>
+            <p style="margin-top:.4rem">We respond within 24 hours on business days.</p>
+          </div>
+          <div class="info-card reveal d2" style="margin-top:.8rem">
+            <h4>Office</h4>
+            <p>1200 Innovation Drive<br />Suite 400<br />San Francisco, CA 94105</p>
+          </div>
+          <div class="info-card reveal d3" style="margin-top:.8rem">
+            <h4>Working Hours</h4>
+            <p>Mon–Fri, 9am–6pm PST<br />Emergency support: 24/7 for production clients</p>
+          </div>
+          <div class="info-card reveal" style="margin-top:.8rem">
+            <h4>Quick Links</h4>
+            <p><a href="service.html">View capabilities →</a><br /><a href="project.html">Read case studies →</a><br /><a href="about.html">Meet the team →</a></p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section alt">
-    <div class="container"><div class="cta reveal">
-      <h2>Prefer to read first?</h2>
-      <p>See how we work and what we've shipped before you reach out.</p>
-      <div class="actions"><a href="service.html" class="btn light">How we work <span class="arrow">→</span></a><a href="project.html" class="btn ghost" style="--fg-btn:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.4)">See our work</a></div>
-    </div></div>
-  </section>
-
   <footer class="footer">
     <div class="container">
-      <div class="top">
-        <div><a href="index.html" class="brand"><svg class="mark" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="#FF6B4A" stroke-width="1.6"/><circle cx="16" cy="16" r="4.5" fill="#FF6B4A"/><circle cx="16" cy="3.5" r="2" fill="#6FA8FF"/><circle cx="27" cy="22" r="2" fill="#6FA8FF"/><circle cx="5" cy="22" r="2" fill="#6FA8FF"/></svg>KORVA</a><p>Applied AI research and products. We build intelligence that earns its place in your stack.</p></div>
-        <div><h4>Studio</h4><ul><li><a href="about.html">About</a></li><li><a href="project.html">Work</a></li><li><a href="service.html">Capabilities</a></li><li><a href="contact.html">Contact</a></li></ul></div>
-        <div><h4>Capabilities</h4><ul><li><a href="service.html">Foundation models</a></li><li><a href="service.html">Agent systems</a></li><li><a href="service.html">Integration</a></li></ul></div>
-        <div><h4>Stay close</h4><p>Occasional research notes. No noise.</p><form class="news" onsubmit="return false"><input type="email" placeholder="you@company.com" aria-label="Email" required /><button class="btn sm" type="submit">Join</button></form></div>
+      <div class="footer-grid">
+        <div><div class="brand">KOR<span>V</span>A</div><p>Custom AI systems — from prototype to production.</p></div>
+        <div><h4>Services</h4><a href="service.html">Custom ML</a><br /><a href="service.html">Computer Vision</a><br /><a href="service.html">NLP</a><br /><a href="service.html">MLOps</a></div>
+        <div><h4>Company</h4><a href="about.html">About</a><br /><a href="project.html">Case Studies</a><br /><a href="contact.html">Contact</a></div>
+        <div><h4>Connect</h4><a href="mailto:hello@korva.ai">hello@korva.ai</a><br /><a href="contact.html">Start a Project</a></div>
       </div>
-      <div class="bottom"><span>© <span data-year>2026</span> KORVA Labs · All rights reserved.</span><span>Built with care, in the open.</span></div>
+      <div class="base">
+        <span>© <span data-year></span> KORVA AI Studio</span>
+        <span>Precision intelligence · No hype</span>
+      </div>
     </div>
   </footer>
   <script src="assets/js/main.js"></script>
