@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — KORVA AI Studio</title>
+  <meta name="description" content="Start an AI project with KORVA — book a free consultation, request a prototype, or discuss a production build." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+</head>
+<body>
+
+  <div class="statusbar">
+    <div class="container">
+      <span class="live"><span class="dot"></span>ALL SYSTEMS NOMINAL</span>
+      <span>Model training active — 3 pipelines running</span>
+      <span class="spacer"></span>
+      <a href="contact.html">Start a project →</a>
+    </div>
+  </div>
+
+  <header class="sitehead">
+    <div class="container">
+      <a href="index.html" class="mark"><span class="glyph">◆</span>KOR<span>V</span>A</a>
+      <nav id="mainnav">
+        <a href="index.html">Home</a>
+        <a href="service.html">Services</a>
+        <a href="project.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <a href="contact.html" class="cta">Start Project</a>
+      <button class="burger" id="burger" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <section class="page-head">
+    <div class="container">
+      <span class="crumb"><a href="index.html">Home</a> / Contact</span>
+      <h1>Start your AI&nbsp;project</h1>
+      <p>Free consultation — we'll assess your data, your problem, and your success criteria.</p>
+    </div>
+  </section>
+
+  <section class="section section--surface">
+    <div class="container">
+      <div class="contact-grid">
+        <form id="contactform" class="reveal">
+          <div class="field">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" />
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="email">Work Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@company.com" />
+            </div>
+            <div class="field">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Company name" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="project-type">Project Type</label>
+              <select id="project-type" name="project-type">
+                <option value="prototype">Prototype (4 weeks)</option>
+                <option value="production">Production Build (8-12 weeks)</option>
+                <option value="retainer">Retainer / Ongoing</option>
+                <option value="consulting">Consulting / Advisory</option>
+                <option value="not-sure">Not sure yet</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="domain">Domain</label>
+              <select id="domain" name="domain">
+                <option value="vision">Computer Vision</option>
+                <option value="nlp">NLP / Language</option>
+                <option value="recommendation">Recommendation Systems</option>
+                <option value="anomaly">Anomaly Detection</option>
+                <option value="forecasting">Forecasting</option>
+                <option value="other">Other / Not Sure</option>
+              </select>
+            </div>
+          </div>
+          <div class="field">
+            <label for="message">Describe Your Project</label>
+            <textarea id="message" name="message" rows="5" placeholder="What problem are you trying to solve? What does success look like? Any data or infrastructure context?"></textarea>
+          </div>
+          <div class="field">
+            <label for="budget">Estimated Budget Range</label>
+            <select id="budget" name="budget">
+              <option value="undecided">Prefer not to say</option>
+              <option value="25-50k">$25K – $50K</option>
+              <option value="50-100k">$50K – $100K</option>
+              <option value="100-250k">$100K – $250K</option>
+              <option value="250k+">$250K+</option>
+            </select>
+          </div>
+          <button type="submit" class="btn-primary">Submit Brief →</button>
+          <div class="form-ok" hidden>Brief received — we'll schedule a consultation within 48 hours.</div>
+          <div class="form-err" hidden>Please fill in all required fields.</div>
+        </form>
+        <div>
+          <div class="info-card reveal d1">
+            <h4>Email</h4>
+            <a href="mailto:hello@korva.ai">hello@korva.ai</a>
+            <p style="margin-top:.4rem">We respond within 24 hours on business days.</p>
+          </div>
+          <div class="info-card reveal d2" style="margin-top:.8rem">
+            <h4>Office</h4>
+            <p>1200 Innovation Drive<br />Suite 400<br />San Francisco, CA 94105</p>
+          </div>
+          <div class="info-card reveal d3" style="margin-top:.8rem">
+            <h4>Working Hours</h4>
+            <p>Mon–Fri, 9am–6pm PST<br />Emergency support: 24/7 for production clients</p>
+          </div>
+          <div class="info-card reveal" style="margin-top:.8rem">
+            <h4>Quick Links</h4>
+            <p><a href="service.html">View capabilities →</a><br /><a href="project.html">Read case studies →</a><br /><a href="about.html">Meet the team →</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div><div class="brand">KOR<span>V</span>A</div><p>Custom AI systems — from prototype to production.</p></div>
+        <div><h4>Services</h4><a href="service.html">Custom ML</a><br /><a href="service.html">Computer Vision</a><br /><a href="service.html">NLP</a><br /><a href="service.html">MLOps</a></div>
+        <div><h4>Company</h4><a href="about.html">About</a><br /><a href="project.html">Case Studies</a><br /><a href="contact.html">Contact</a></div>
+        <div><h4>Connect</h4><a href="mailto:hello@korva.ai">hello@korva.ai</a><br /><a href="contact.html">Start a Project</a></div>
+      </div>
+      <div class="base">
+        <span>© <span data-year></span> KORVA AI Studio</span>
+        <span>Precision intelligence · No hype</span>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
